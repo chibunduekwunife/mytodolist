@@ -10,10 +10,14 @@ function App() {
     setTask((prevTasks) => [...prevTasks, task])
   }
 
+  const deleteTask = (index) => {
+    setTask((prevTasks) => prevTasks.filter((_, i) => i !== index))
+  }
+
   return (
     <div>
       <h1>My TodoList</h1>
-      <TaskWindow tasks={task}/>
+      <TaskWindow tasks={task} deleteTask={deleteTask}/>
       <Input addTask={addTask}/>
     </div>
 
