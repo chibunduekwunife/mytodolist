@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import TaskWindow from './components/TaskWindow'
 import Input from './components/Input'
+import styles from './styles/App.module.css'
 
 function App() {
   
@@ -15,7 +16,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className={styles.mainContainer}>
       <h1>My TodoList</h1>
       <TaskWindow tasks={task} deleteTask={deleteTask}/>
       <Input addTask={addTask}/>

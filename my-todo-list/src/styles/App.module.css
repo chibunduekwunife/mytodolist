@@ -1,0 +1,16 @@
+
+.mainContainer {
+    text-align: center;
+    margin: 4rem auto;
+    padding: 5rem;
+    max-width: 80%;
+    background-color: rgb(85, 85, 85);
+    border-radius: 3rem;
+    box-shadow: green;
+}
+
+h1 {
+    color: white;
+    font-size: 1000;
+    margin-bottom: 1rem;
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import styles from '../styles/Input.module.css'
 
 function Input({ addTask }) {
 
@@ -11,15 +12,16 @@ function Input({ addTask }) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={styles.taskForm}>
             <input
                 type="text"
                 placeholder="Write a task..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 aria-label="Task Input"
+                className={styles.taskInput}
             />
-            <button type="submit">Add</button>
+            <button type="submit" className={styles.submitButton}>Add</button>
 
         </form>
     )

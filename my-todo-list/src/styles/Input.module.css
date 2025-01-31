@@ -1,0 +1,22 @@
+.taskInput {
+    width: 80%;
+    height: 2rem;
+    padding: 0 1rem;
+}
+
+.taskForm {
+    max-width: 40%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.submitButton {
+    width: 20%;
+    height: 2rem;
+    background-color: rgb(139, 105, 16);
+    color: white;
+}
+
+.submitButton:hover {
+    background-color: rgb(119, 90, 18);
+}

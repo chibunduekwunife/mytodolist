@@ -1,0 +1,32 @@
+
+h2 {
+    color: goldenrod;
+}
+
+.taskContainer {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.tasks {
+    color: white;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    align-items: center;
+    text-align: left;
+}
+
+.deleteButton {
+    background-color: rgb(177, 27, 27);
+    color: white;
+    min-width: 2rem;
+    min-height: 2rem;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: rgb(112, 22, 22);
+}
